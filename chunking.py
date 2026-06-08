@@ -61,7 +61,7 @@ def embed_chunks(chunks: list[dict], persist_dir: str = "./chroma_db"):
         model_name="sentence-transformers/all-MiniLM-L12-v2"
     )
 
-    # ✅ Reuse existing DB instead of re-embedding every time
+    # Reuse existing DB instead of re-embedding every time
     if os.path.exists(persist_dir) and os.listdir(persist_dir):
         print("Loading existing ChromaDB...")
         return Chroma(
@@ -90,15 +90,15 @@ def retrieve(vectorstore, query: str, k: int = 5) -> list[dict]:
         search_type="similarity_score_threshold",
         search_kwargs={
             "k": k,
-            "score_threshold": 0.20  # ✅ Was 0.50 — too high, returned nothing
+            "score_threshold": 0.20  #  Was 0.50 — too high, returned nothing
         }
     )
 
     results = retriever.invoke(query)
 
-    # ✅ Fallback: if still no results, do plain similarity search
+    # Fallback: if still no results, do plain similarity search
     if not results:
-        print("⚠️  No results above threshold, falling back to plain similarity search")
+        print("No results above threshold, falling back to plain similarity search")
         results = vectorstore.similarity_search(query, k=k)
 
     return [{"text": doc.page_content, "metadata": doc.metadata} for doc in results]
@@ -132,7 +132,7 @@ Answer in 2-3 sentences, grounded in the context above."""
     return response.choices[0].message.content
 
 
-# ✅ All run-once setup is now inside __main__ — safe to import from app.py
+# All run-once setup is now inside __main__ — safe to import from app.py
 if __name__ == "__main__":
     files = [
         "jobs1.txt", "resume2.txt", "resume3.txt", "careerguidance4.txt",
