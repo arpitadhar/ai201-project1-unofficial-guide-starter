@@ -102,6 +102,7 @@ Has a 512 token limit, but can only handle English queries so it may break for n
      Label each stage with the tool or library you're using.
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
+<img width="5851" height="515" alt="image" src="https://github.com/user-attachments/assets/63d2ad72-227e-4509-b2b1-1fbb4bc1e013" />
 
 ---
 config:
