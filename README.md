@@ -13,7 +13,7 @@
      Why is this knowledge valuable, and why is it hard to find through official channels?
      Example: "Student reviews of CS professors at [university] — useful because official
      course descriptions don't reflect teaching style, exam difficulty, or workload." -->
-
+The topic that my system covers is job search strategies for master's students. This knowledge is valuable because securing a job is something that is a priority/necessity to many people and right now it is definitely more difficult to find a job for many people. 
 ---
 
 ## Document Sources
@@ -24,16 +24,16 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Reddit - r/jobs | website |https://www.reddit.com/r/jobs/comments/1jla9fi/why_cant_i_find_a_job_23m_and_current_grad_student/ |
+| 2 | Reddit - r/Resume | website | https://www.reddit.com/r/Resume/comments/1o5fx7t/how_i_got_7_interviews_2_weeks_ago_my_resume/ |
+| 3 | Reddit - r/careeradvice | website | https://www.reddit.com/r/careeradvice/comments/1k2scto/ive_reviewed_5000_resumes_heres_how_you_can_stand/|
+| 4 | Reddit - r/careerguidance | website | https://www.reddit.com/r/careerguidance/comments/qg48g8/how_do_you_exactly_network_on_linkedin/ |
+| 5 | Reddit - r/lifehacks | website | https://www.reddit.com/r/lifehacks/comments/18ljxsu/interview_tips_and_tricks_that_would_impress_the/ |
+| 6 | Reddit - r/AskAcademia | website |https://www.reddit.com/r/AskAcademia/comments/nvy6wz/what_did_you_do_during_graduate_school_to_fully/ |
+| 7 | Reddit - r/GradSchool | website | https://www.reddit.com/r/GradSchool/comments/uiw7p0/how_to_approach_a_job_during_masters_program/|
+| 8 | Reddit - r/jobsearchhacks | website |https://www.reddit.com/r/jobsearchhacks/comments/1i1l4fl/what_did_you_do_differently_to_finally_get_a_job/ |
+| 9 | Reddit - r/jobsearchhacks | website |https://www.reddit.com/r/jobsearchhacks/comments/1nhypmm/whats_the_fastest_way_to_find_a_job_in_2025/ |
+| 10 | Reddit - r/jobs | website |https://www.reddit.com/r/jobs/comments/18wzqxe/what_job_sites_is_everyone_using/ |
 
 ---
 
@@ -47,13 +47,13 @@
      - What your final chunk count was across all documents -->
 
 **Chunk size:**
-
+300 token
 **Overlap:**
-
+50 token 
 **Why these choices fit your documents:**
-
+The threads create valuable data so creating smaller would lead to loss of data. 
 **Final chunk count:**
-
+500 - 600 chunks
 ---
 
 ## Embedding Model
@@ -118,13 +118,13 @@
      results from an unrelated review" is an explanation. -->
 
 **Question that failed:**
-
+Why is my resume not being reviewed?
 **What the system returned:**
-
+I don't have enough information to provide you with an answer. 
 **Root cause (tied to a specific pipeline stage):**
-
+The documents focus more on how to make a good resume instead of the latter.
 **What you would change to fix it:**
-
+Include more documents/websites. 
 ---
 
 ## Spec Reflection
